@@ -1,7 +1,9 @@
 :root {
+    --primary-color: #EE4D2D;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --border-color: #dbdbdb;
 }
 
 * {
@@ -38,4 +40,41 @@ html {
     to {
         opacity: 1;
     }
+}
+
+/* Button style */
+.btn {
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn.btn--size-s {
+    padding: 0 8px;
+    height: 32px;
+    font-size: 12px;
+}
+
+.btn.btn--disabled {
+    color: #ccc;
+    cursor: default;
+    background-color: #999;
 }
